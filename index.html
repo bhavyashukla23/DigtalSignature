@@ -6,6 +6,48 @@
     <title>DigitalSignature</title>
 </head>
 <body>
-    
+    <div class="main">
+
+        <!-- the top bar for signature styling  -->
+        <div class="topBar">
+
+            <div class="block">
+                <p>Colour of Signature</p>
+                <input class="form-colour" type="color" id="colorPicker">
+            </div>
+
+            <div class="block">
+                <p>Background Color</p>
+                <input class="form-control" id="backgroundColor" type="color">
+            </div>
+
+            <div class="block">
+                <p>Signature Size</p>
+                <select class="custom-select" type="select" id="fontSize">
+                    <option id="5">5px</option>
+                    <option id="7">7px</option>
+                    <option id="9">9px</option>
+                    <option id="12">12px</option>
+                    <option id="15">15px</option>
+                    <option id="18">18px</option>
+                    <option id="20">20px</option>
+                    <option id="23">23px</option>
+                    <option id="26">26px</option>
+                    <option id="30">30px</option>
+                </select>
+            </div>
+
+            <!-- canvas board for writing signature digitally -->
+            <canvas class="signatureCanvas" id="myCanvas" width="800" height="500"></canvas>
+
+            <!-- bottom parts for various functions on signature -->
+            <div class="footer">
+                <button type="button" class="btn-btn-danger" id="clearButton">Clear the Canvas</button>
+                <button type="button" class="btn-btn-success" id="saveButton">Save and Download Signature</button>
+                <button type="button" class="btn-btn-warning" id="retrieveButton">Retrieve Last Saved Signature</button>
+            </div>
+           
+        </div>
+    </div>
 </body>
 </html>
