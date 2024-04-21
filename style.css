@@ -1,6 +1,4 @@
-*{
-    background-color:rgba(245, 245, 245, 0.532);
-}
+
 .main {
     position: absolute;
     top: 50%;
@@ -8,20 +6,16 @@
     transform: translate(-50%, -50%);
 }
 
-.signatureCanvas {
+.canvas {
     border: 2px solid black;
 }
 
-.topBar,
-.footer {
+.top,
+.bottom {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 20px 0 20px 0;
-    justify-items: auto;
-    border-radius: 10px;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 10px; 
 }
 
 .block,
